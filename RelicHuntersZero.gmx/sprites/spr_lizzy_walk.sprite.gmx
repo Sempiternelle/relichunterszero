@@ -10,7 +10,7 @@
   <bbox_left>35</bbox_left>
   <bbox_right>78</bbox_right>
   <bbox_top>50</bbox_top>
-  <bbox_bottom>92</bbox_bottom>
+  <bbox_bottom>91</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -25,6 +25,5 @@
     <frame index="2">images\spr_lizzy_walk_2.png</frame>
     <frame index="3">images\spr_lizzy_walk_3.png</frame>
     <frame index="4">images\spr_lizzy_walk_4.png</frame>
-    <frame index="5">images\spr_lizzy_walk_5.png</frame>
   </frames>
 </sprite>
