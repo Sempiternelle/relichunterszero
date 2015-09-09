@@ -359,6 +359,7 @@
         <sprite>sprites\spr_turtle_death2</sprite>
         <sprite>sprites\spr_turtle_death3</sprite>
         <sprite>sprites\spr_turtle_precision</sprite>
+        <sprite>sprites\spr_turtle_frozen</sprite>
       </sprites>
       <sprites name="Turtle2">
         <sprite>sprites\spr_turtle2_idle</sprite>
@@ -502,12 +503,14 @@
       <sprite>sprites\spr_smg_plasma</sprite>
       <sprite>sprites\spr_smg_relic</sprite>
       <sprite>sprites\spr_sniper_rifle</sprite>
+      <sprite>sprites\spr_lazy_laser</sprite>
       <sprite>sprites\spr_sniper_relic</sprite>
       <sprite>sprites\spr_sniper_ghost</sprite>
       <sprite>sprites\spr_submachinegun</sprite>
     </sprites>
     <sprites name="Bullets&amp;Effects">
       <sprite>sprites\spr_bullet</sprite>
+      <sprite>sprites\spr_freeze_bullet</sprite>
       <sprite>sprites\spr_bullet_blue</sprite>
       <sprite>sprites\spr_bullet_small</sprite>
       <sprite>sprites\spr_bullet_critical</sprite>
@@ -1232,10 +1235,11 @@
         <object>objects\obj_assault_rifle</object>
         <object>objects\obj_assault_rifle_crude</object>
         <object>objects\obj_bossGun</object>
+        <object>objects\obj_bouncer</object>
         <object>objects\obj_flamethrower</object>
         <object>objects\obj_highmag</object>
-        <object>objects\obj_bouncer</object>
         <object>objects\obj_keytar</object>
+        <object>objects\obj_lazy_laser</object>
         <object>objects\obj_machinegun</object>
         <object>objects\obj_pistol</object>
         <object>objects\obj_pistol_assault</object>
@@ -1249,15 +1253,15 @@
         <object>objects\obj_rocketlauncher_relic</object>
         <object>objects\obj_sawedoff</object>
         <object>objects\obj_shotgun</object>
-        <object>objects\obj_shotgun_relic</object>
         <object>objects\obj_shotgun_crude</object>
         <object>objects\obj_shotgun_heavy</object>
+        <object>objects\obj_shotgun_relic</object>
         <object>objects\obj_smg_crude</object>
-        <object>objects\obj_smg_relic</object>
         <object>objects\obj_smg_plasma</object>
-        <object>objects\obj_sniper_rifle</object>
-        <object>objects\obj_sniper_relic</object>
+        <object>objects\obj_smg_relic</object>
         <object>objects\obj_sniper_ghost</object>
+        <object>objects\obj_sniper_relic</object>
+        <object>objects\obj_sniper_rifle</object>
         <object>objects\obj_submachinegun</object>
       </objects>
     </objects>
@@ -1654,6 +1658,7 @@
       <object>objects\obj_rocket</object>
       <object>objects\obj_redbarrel_projectile</object>
       <object>objects\obj_projectile_player</object>
+      <object>objects\obj_lazy_laser_projectile</object>
       <object>objects\obj_flame</object>
       <object>objects\obj_sonicboom</object>
       <object>objects\obj_projectile_enemy</object>

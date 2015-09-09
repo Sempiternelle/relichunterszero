@@ -31,47 +31,37 @@ event_inherited();
     playerName = "LIZZY";
     myChar = char_lizzy;
     
-    energy_max = 50;
+    melee_damage=50;
+    
+    energy_max = 100;
     energy_max_regular = energy_max;
     energy_max_relic = energy_max*2;
     energy = energy_max;
     
-    hp_max = 200;
+    hp_max = 160;
     hp_max_regular = hp_max;
     hp_max_relic = hp_max*2;
     
     
-    stamina_max = 100;
-    stamina = stamina_max;
-    energy_regen_speed = 2;
-
-    energy_regen_time = room_speed*3;
-    energy_regen_time_regular = energy_regen_time;
-    energy_regen_time_relic = round(energy_regen_time/2);
-    
     base_accuracy = 1;
     //Weapon Skills, "1" is perfect, higher is worse
-    accPistol = 1;
+    accPistol = 4;
     accMachinegun = 3;
-    accShotgun = 3;
-    accSniper = 6;
-    accSmg = 3;
-    accRocket = 1;
-    accRifle = 9;
+    accShotgun = 5;
+    accSniper = 1;
+    accSmg = 1;
+    accRocket = 2;
+    accRifle = 3;
     
-    stamina_regen = 0.52;
-    stamina_regen_regular = stamina_regen;
-    stamina_regen_relic = stamina_regen*2;
+    stamina_max = 100;
+    stamina = stamina_max;
+    stamina_regen = 0.45;
+    energy_regen_speed = 2;
     
-    dodge_stamina = 50;
-    sprint_stamina = 0.3;
-    sprint_stamina_min = 10;
     
-    melee_stamina_cost = 10;
-    
-    move_speed_max = 5;
-    move_speed_sprint = 6.5;
-    move_speed_aiming = 3;
+    move_speed_max = 4;
+    move_speed_sprint = 5;
+    move_speed_aiming = 3.5;
     
     //Sprites
     sprite_idle = spr_lizzy_idle;
@@ -145,10 +135,10 @@ overshield = global.overshield[myPlayerId];
     {
         show_debug_message('weapon2[myPlayerId] returns '+string(global.weapon2[myPlayerId]));
         
-        if global.weapon2[myPlayerId] == obj_gloves
+        if global.weapon2[myPlayerId] == obj_lazy_laser
         {
-            instance_create(x,y,obj_gloves);
-            weapon2 = obj_gloves;
+            instance_create(x,y,obj_lazy_laser);
+            weapon2 = obj_lazy_laser;
             weapon2.owner = id;
             weapon2.weaponLevel = global.weapon2Level[myPlayerId];
             draw_gun(weapon2);
@@ -168,10 +158,10 @@ overshield = global.overshield[myPlayerId];
     {
         show_debug_message('weapon2[myPlayerId] returns '+string(global.weapon2[myPlayerId]));
         
-        if global.weapon1[myPlayerId] == obj_gloves
+        if global.weapon1[myPlayerId] == obj_lazy_laser
         {
-            instance_create(x,y,obj_gloves);
-            weapon1 = obj_gloves;
+            instance_create(x,y,obj_lazy_laser);
+            weapon1 = obj_lazy_laser;
             weapon1.owner = id;
             weapon1.weaponLevel = global.weapon1Level[myPlayerId];
             draw_gun(weapon1);
@@ -187,8 +177,8 @@ overshield = global.overshield[myPlayerId];
     }
     else //Starting with Gloves
     {
-        instance_create(x,y,obj_gloves);
-        weapon1 = obj_gloves;
+        instance_create(x,y,obj_lazy_laser);
+        weapon1 = obj_lazy_laser;
         weapon1.owner = id;
         draw_gun(weapon1);
     }

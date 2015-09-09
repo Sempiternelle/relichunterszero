@@ -160,7 +160,7 @@ if (owner) &amp;&amp; (instance_exists(owner))
             statMelee = 3;
             statStamina = 1;
             statSpeed = 2;
-            myWeaponSprite = spr_pistol;
+            myWeaponSprite = spr_lazy_laser;
             myString = loc_key("CHARSELECT_DESC_LIZZY");
         }
         
