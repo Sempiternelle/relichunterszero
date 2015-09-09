@@ -74,15 +74,15 @@ event_inherited();
     move_speed_aiming = 3;
     
     //Sprites
-    sprite_idle = spr_pinky_idle;
-    sprite_walk = spr_pinky_walk;
-    sprite_sprint = spr_pinky_sprint;
-    sprite_dash = spr_pinky_dash;
-    sprite_hit = spr_pinky_hit;
-    sprite_death = spr_pinky_death;
-    sprite_melee = spr_pinky_melee;
-    sprite_dash_fx = spr_pinky_dash_fx;
-    sprite_dig = spr_pinky_dig;
+    sprite_idle = spr_lizzy_idle;
+    sprite_walk = spr_lizzy_walk;
+    sprite_sprint = spr_lizzy_sprint;
+    sprite_dash = spr_lizzy_dash;
+    sprite_hit = spr_lizzy_hit;
+    sprite_death = spr_lizzy_death;
+    sprite_melee = spr_lizzy_melee;
+    sprite_dash_fx = spr_lizzy_dash_fx;
+    sprite_dig = spr_lizzy_dig;
     
     
 </string>
