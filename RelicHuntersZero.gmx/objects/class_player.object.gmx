@@ -1309,6 +1309,7 @@ if (hp &lt;= 0)
     if (global.character[myPlayerId] == char_punny) corpse.sprite_index = spr_punny_death;
     if (global.character[myPlayerId] == char_ass) corpse.sprite_index = spr_ass_death;
     if (global.character[myPlayerId] == char_rider) corpse.sprite_index = spr_jimmy_death;
+    if (global.character[myPlayerId] == char_lizzy) corpse.sprite_index = spr_lizzy_death;
     instance_destroy();
 }
 else hp = round(hp);

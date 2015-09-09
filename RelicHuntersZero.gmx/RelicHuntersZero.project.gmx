@@ -551,6 +551,7 @@
       <sprite>sprites\spr_prompt_x</sprite>
       <sprite>sprites\spr_hud_face_jimmy</sprite>
       <sprite>sprites\spr_hud_face_pinky</sprite>
+      <sprite>sprites\spr_hud_face_lizzy</sprite>
       <sprite>sprites\spr_hud_face_biu</sprite>
       <sprite>sprites\spr_hud_face_raff</sprite>
       <sprite>sprites\spr_hud_face_punny</sprite>
@@ -644,32 +645,34 @@
         <sprite>sprites\spr_gunnar_idle</sprite>
       </sprites>
       <sprites name="Jimmy">
-        <sprite>sprites\spr_jimmy_idle</sprite>
-        <sprite>sprites\spr_jimmy_walk</sprite>
         <sprite>sprites\spr_jimmy_dash</sprite>
         <sprite>sprites\spr_jimmy_dash_fx</sprite>
-        <sprite>sprites\spr_jimmy_sprint</sprite>
-        <sprite>sprites\spr_jimmy_melee</sprite>
-        <sprite>sprites\spr_jimmy_dig</sprite>
         <sprite>sprites\spr_jimmy_death</sprite>
-        <sprite>sprites\spr_jimmy_teleport_in</sprite>
-        <sprite>sprites\spr_jimmy_teleport_out</sprite>
+        <sprite>sprites\spr_jimmy_dig</sprite>
         <sprite>sprites\spr_jimmy_hit</sprite>
         <sprite>sprites\spr_jimmy_holo</sprite>
+        <sprite>sprites\spr_jimmy_idle</sprite>
+        <sprite>sprites\spr_jimmy_melee</sprite>
+        <sprite>sprites\spr_jimmy_sprint</sprite>
+        <sprite>sprites\spr_jimmy_teleport_in</sprite>
+        <sprite>sprites\spr_jimmy_teleport_out</sprite>
+        <sprite>sprites\spr_jimmy_walk</sprite>
+      </sprites>
+      <sprites name="Lizzy">
+        <sprite>sprites\spr_lizzy_dash</sprite>
+        <sprite>sprites\spr_lizzy_dash_fx</sprite>
+        <sprite>sprites\spr_lizzy_death</sprite>
+        <sprite>sprites\spr_lizzy_dig</sprite>
+        <sprite>sprites\spr_lizzy_hit</sprite>
+        <sprite>sprites\spr_lizzy_holo</sprite>
+        <sprite>sprites\spr_lizzy_idle</sprite>
+        <sprite>sprites\spr_lizzy_melee</sprite>
+        <sprite>sprites\spr_lizzy_sprint</sprite>
+        <sprite>sprites\spr_lizzy_teleport_in</sprite>
+        <sprite>sprites\spr_lizzy_teleport_out</sprite>
+        <sprite>sprites\spr_lizzy_walk</sprite>
       </sprites>
       <sprites name="Pinky">
-        <sprite>sprites\spr_pinky_idle</sprite>
-        <sprite>sprites\spr_pinky_dash</sprite>
-        <sprite>sprites\spr_pinky_dash_fx</sprite>
-        <sprite>sprites\spr_pinky_hit</sprite>
-        <sprite>sprites\spr_pinky_death</sprite>
-        <sprite>sprites\spr_pinky_sprint</sprite>
-        <sprite>sprites\spr_pinky_walk</sprite>
-        <sprite>sprites\spr_pinky_melee</sprite>
-        <sprite>sprites\spr_pinky_dig</sprite>
-        <sprite>sprites\spr_pinky_teleport_in</sprite>
-        <sprite>sprites\spr_pinky_teleport_out</sprite>
-        <sprite>sprites\spr_pinky_holo</sprite>
         <sprites name="Gloves">
           <sprite>sprites\spr_gloves_dash</sprite>
           <sprite>sprites\spr_gloves_hit</sprite>
@@ -678,6 +681,18 @@
           <sprite>sprites\spr_gloves_sprint</sprite>
           <sprite>sprites\spr_gloves_walk</sprite>
         </sprites>
+        <sprite>sprites\spr_pinky_dash</sprite>
+        <sprite>sprites\spr_pinky_dash_fx</sprite>
+        <sprite>sprites\spr_pinky_death</sprite>
+        <sprite>sprites\spr_pinky_dig</sprite>
+        <sprite>sprites\spr_pinky_hit</sprite>
+        <sprite>sprites\spr_pinky_holo</sprite>
+        <sprite>sprites\spr_pinky_idle</sprite>
+        <sprite>sprites\spr_pinky_melee</sprite>
+        <sprite>sprites\spr_pinky_sprint</sprite>
+        <sprite>sprites\spr_pinky_teleport_in</sprite>
+        <sprite>sprites\spr_pinky_teleport_out</sprite>
+        <sprite>sprites\spr_pinky_walk</sprite>
       </sprites>
       <sprites name="Punny">
         <sprite>sprites\spr_punny_idle</sprite>
@@ -705,9 +720,6 @@
         <sprite>sprites\spr_raff_teleport_out</sprite>
         <sprite>sprites\spr_raff_holo</sprite>
       </sprites>
-      <sprites name="Sae">
-        <sprite>sprites\spr_sae_idleShop</sprite>
-      </sprites>
       <sprites name="Rider">
         <sprite>sprites\spr_rider_idle</sprite>
         <sprite>sprites\spr_rider_hit</sprite>
@@ -718,6 +730,9 @@
         <sprite>sprites\spr_rider_teleport_out</sprite>
         <sprite>sprites\spr_rider_teleport_in</sprite>
         <sprite>sprites\spr_rider_holo</sprite>
+      </sprites>
+      <sprites name="Sae">
+        <sprite>sprites\spr_sae_idleShop</sprite>
       </sprites>
       <sprite>sprites\spr_melee</sprite>
       <sprite>sprites\spr_melee_gloves</sprite>
@@ -835,41 +850,46 @@
       <sprite>sprites\spr_char_inputBox</sprite>
       <sprite>sprites\spr_char_statsBox</sprite>
       <sprites name="CharSelection">
-        <sprite>sprites\spr_fx_charBar</sprite>
-        <sprite>sprites\spr_char_randomOn</sprite>
-        <sprite>sprites\spr_char_randomSel</sprite>
-        <sprite>sprites\spr_char_randomFinal</sprite>
-        <sprite>sprites\spr_char_randomOff</sprite>
-        <sprite>sprites\spr_char_jimmyOn</sprite>
-        <sprite>sprites\spr_char_jimmySel</sprite>
-        <sprite>sprites\spr_char_jimmyFinal</sprite>
-        <sprite>sprites\spr_char_jimmyOff</sprite>
-        <sprite>sprites\spr_char_assOn</sprite>
-        <sprite>sprites\spr_char_assSel</sprite>
-        <sprite>sprites\spr_char_assFinal</sprite>
-        <sprite>sprites\spr_char_assOff</sprite>
-        <sprite>sprites\spr_char_biuOn</sprite>
-        <sprite>sprites\spr_char_biuSel</sprite>
-        <sprite>sprites\spr_char_biuFinal</sprite>
-        <sprite>sprites\spr_char_biuOff</sprite>
-        <sprite>sprites\spr_char_pinkyOn</sprite>
-        <sprite>sprites\spr_char_pinkySel</sprite>
-        <sprite>sprites\spr_char_pinkyFinal</sprite>
-        <sprite>sprites\spr_char_pinkyOff</sprite>
-        <sprite>sprites\spr_char_punnyOn</sprite>
-        <sprite>sprites\spr_char_punnySel</sprite>
-        <sprite>sprites\spr_char_punnyFinal</sprite>
-        <sprite>sprites\spr_char_punnyOff</sprite>
-        <sprite>sprites\spr_char_raffOn</sprite>
-        <sprite>sprites\spr_char_raffSel</sprite>
-        <sprite>sprites\spr_char_raffFinal</sprite>
-        <sprite>sprites\spr_char_raffOff</sprite>
-        <sprite>sprites\spr_card_jimmy</sprite>
         <sprite>sprites\spr_card_ass</sprite>
         <sprite>sprites\spr_card_biu</sprite>
+        <sprite>sprites\spr_card_jimmy</sprite>
+        <sprite>sprites\spr_card_lizzy</sprite>
         <sprite>sprites\spr_card_pinky</sprite>
         <sprite>sprites\spr_card_punny</sprite>
         <sprite>sprites\spr_card_raff</sprite>
+        <sprite>sprites\spr_char_assFinal</sprite>
+        <sprite>sprites\spr_char_assOff</sprite>
+        <sprite>sprites\spr_char_assOn</sprite>
+        <sprite>sprites\spr_char_assSel</sprite>
+        <sprite>sprites\spr_char_biuFinal</sprite>
+        <sprite>sprites\spr_char_biuOff</sprite>
+        <sprite>sprites\spr_char_biuOn</sprite>
+        <sprite>sprites\spr_char_biuSel</sprite>
+        <sprite>sprites\spr_char_jimmyFinal</sprite>
+        <sprite>sprites\spr_char_jimmyOff</sprite>
+        <sprite>sprites\spr_char_jimmyOn</sprite>
+        <sprite>sprites\spr_char_jimmySel</sprite>
+        <sprite>sprites\spr_char_lizzySel</sprite>
+        <sprite>sprites\spr_char_lizzyFinal</sprite>
+        <sprite>sprites\spr_char_lizzyOff</sprite>
+        <sprite>sprites\spr_char_lizzyOn</sprite>
+        <sprite>sprites\spr_char_pinkyFinal</sprite>
+        <sprite>sprites\spr_char_pinkyOff</sprite>
+        <sprite>sprites\spr_char_pinkyOn</sprite>
+        <sprite>sprites\spr_char_pinkySel</sprite>
+        <sprite>sprites\spr_char_punnyFinal</sprite>
+        <sprite>sprites\spr_char_punnyOff</sprite>
+        <sprite>sprites\spr_char_punnyOn</sprite>
+        <sprite>sprites\spr_char_punnySel</sprite>
+        <sprite>sprites\spr_char_raffFinal</sprite>
+        <sprite>sprites\spr_char_raffOff</sprite>
+        <sprite>sprites\spr_char_raffOn</sprite>
+        <sprite>sprites\spr_char_raffSel</sprite>
+        <sprite>sprites\spr_char_randomFinal</sprite>
+        <sprite>sprites\spr_char_randomOff</sprite>
+        <sprite>sprites\spr_char_randomOn</sprite>
+        <sprite>sprites\spr_char_randomSel</sprite>
+        <sprite>sprites\spr_fx_charBar</sprite>
       </sprites>
     </sprites>
   </sprites>
@@ -1199,6 +1219,7 @@
       <object>objects\obj_jimmy</object>
       <object>objects\obj_rider</object>
       <object>objects\obj_pinky</object>
+      <object>objects\obj_lizzy</object>
       <object>objects\obj_raff</object>
       <object>objects\obj_biu</object>
       <object>objects\obj_punny</object>
@@ -1353,6 +1374,7 @@
       <objects name="NPCs">
         <object>objects\class_character_swap</object>
         <object>objects\obj_swap_pinky</object>
+        <object>objects\obj_swap_lizzy</object>
         <object>objects\obj_swap_jimmy</object>
         <object>objects\obj_swap_raff</object>
         <object>objects\obj_swap_biu</object>
@@ -1450,6 +1472,7 @@
         <object>objects\menu_char_jimmy</object>
         <object>objects\menu_char_rider</object>
         <object>objects\menu_char_pinky</object>
+        <object>objects\menu_char_lizzy</object>
         <object>objects\menu_char_biu</object>
         <object>objects\menu_char_punny</object>
         <object>objects\menu_char_raff</object>
@@ -1872,76 +1895,77 @@
     <room>rooms\room_end</room>
     <room>rooms\room_tutorial</room>
   </rooms>
-  <constants number="69">
-    <constant name="gamemode_adventure">0</constant>
-    <constant name="gamemode_endless">1</constant>
+  <constants number="70">
+    <constant name="an_clamp_forever">3</constant>
+    <constant name="an_clamp">2</constant>
+    <constant name="an_loop">1</constant>
+    <constant name="char_ass">6</constant>
+    <constant name="char_biu">4</constant>
+    <constant name="char_jimmy">1</constant>
+    <constant name="char_lizzy">8</constant>
+    <constant name="char_pinky">2</constant>
+    <constant name="char_punny">5</constant>
+    <constant name="char_raff">3</constant>
     <constant name="char_random">99</constant>
     <constant name="char_rider">7</constant>
-    <constant name="char_ass">6</constant>
-    <constant name="char_punny">5</constant>
-    <constant name="char_biu">4</constant>
-    <constant name="char_raff">3</constant>
-    <constant name="char_pinky">2</constant>
-    <constant name="char_jimmy">1</constant>
-    <constant name="an_loop">1</constant>
-    <constant name="an_clamp">2</constant>
-    <constant name="an_clamp_forever">3</constant>
-    <constant name="f_player">0</constant>
-    <constant name="f_enemy">1</constant>
     <constant name="f_all">2</constant>
-    <constant name="type_light">0</constant>
-    <constant name="type_medium">1</constant>
-    <constant name="type_heavy">2</constant>
-    <constant name="type_grenade">3</constant>
-    <constant name="K_BETU_RED">make_color_rgb(178,0,65)</constant>
-    <constant name="K_BETU_GREEN2">make_color_rgb(99,210,0)</constant>
-    <constant name="K_BETU_GREEN">make_color_rgb(0,178,45)</constant>
-    <constant name="K_BETU_BLUE">make_color_rgb(0,88,178)</constant>
-    <constant name="K_BETU_ORANGE">make_color_rgb(255,94,0)</constant>
-    <constant name="K_BETU_YELLOW">make_color_rgb(244,246,0)</constant>
-    <constant name="K_BETU_MAGENTA_PAUSE">make_color_rgb(255,26,96)</constant>
-    <constant name="K_BETU_MAGENTA">make_colour_rgb(239,4,68)</constant>
-    <constant name="K_AUTOAIM_OFF">0</constant>
+    <constant name="f_enemy">1</constant>
+    <constant name="f_player">0</constant>
+    <constant name="gamemode_adventure">0</constant>
+    <constant name="gamemode_endless">1</constant>
     <constant name="K_AUTOAIM_ASSIST">1</constant>
     <constant name="K_AUTOAIM_FULL">2</constant>
+    <constant name="K_AUTOAIM_OFF">0</constant>
+    <constant name="K_BETU_BLUE">make_color_rgb(0,88,178)</constant>
+    <constant name="K_BETU_GREEN">make_color_rgb(0,178,45)</constant>
+    <constant name="K_BETU_GREEN2">make_color_rgb(99,210,0)</constant>
+    <constant name="K_BETU_MAGENTA_PAUSE">make_color_rgb(255,26,96)</constant>
+    <constant name="K_BETU_MAGENTA">make_colour_rgb(239,4,68)</constant>
+    <constant name="K_BETU_ORANGE">make_color_rgb(255,94,0)</constant>
+    <constant name="K_BETU_RED">make_color_rgb(178,0,65)</constant>
+    <constant name="K_BETU_YELLOW">make_color_rgb(244,246,0)</constant>
+    <constant name="K_INPUT_ALL">9</constant>
+    <constant name="K_INPUT_JOYSTICK1">0</constant>
+    <constant name="K_INPUT_JOYSTICK2">1</constant>
+    <constant name="K_INPUT_KEYBOARD">4</constant>
     <constant name="K_PROJECTILE_BASIC">0</constant>
     <constant name="K_PROJECTILE_FLAME">1</constant>
     <constant name="K_PROJECTILE_ROCKET">2</constant>
     <constant name="K_PROJECTILE_SONIC">3</constant>
-    <constant name="K_INPUT_KEYBOARD">4</constant>
-    <constant name="K_INPUT_JOYSTICK1">0</constant>
-    <constant name="K_INPUT_JOYSTICK2">1</constant>
-    <constant name="K_INPUT_ALL">9</constant>
-    <constant name="lang_english">1</constant>
-    <constant name="lang_ptbr">2</constant>
-    <constant name="lang_huebr">3</constant>
-    <constant name="lang_russian">4</constant>
-    <constant name="lang_japanese">5</constant>
-    <constant name="lang_german">6</constant>
-    <constant name="lang_french">7</constant>
-    <constant name="lang_spanish">8</constant>
-    <constant name="lang_czech">9</constant>
-    <constant name="lang_korean">10</constant>
-    <constant name="lang_dutch">11</constant>
-    <constant name="lang_italian">12</constant>
-    <constant name="lang_chineseTr">13</constant>
-    <constant name="lang_chineseSp">14</constant>
-    <constant name="lang_indonesian">15</constant>
-    <constant name="lang_polish">16</constant>
-    <constant name="lang_hungary">17</constant>
-    <constant name="lang_thai">18</constant>
-    <constant name="lang_norwegian">19</constant>
-    <constant name="lang_danish">20</constant>
-    <constant name="lang_roumanian">21</constant>
-    <constant name="lang_pirate">22</constant>
-    <constant name="lang_hebrew">23</constant>
-    <constant name="lang_swedish">24</constant>
-    <constant name="lang_greek">25</constant>
-    <constant name="lang_vietnam">26</constant>
-    <constant name="lang_turkish">27</constant>
     <constant name="lang_arabic">28</constant>
+    <constant name="lang_chineseSp">14</constant>
+    <constant name="lang_chineseTr">13</constant>
+    <constant name="lang_czech">9</constant>
+    <constant name="lang_danish">20</constant>
+    <constant name="lang_dutch">11</constant>
+    <constant name="lang_english">1</constant>
+    <constant name="lang_french">7</constant>
+    <constant name="lang_german">6</constant>
+    <constant name="lang_greek">25</constant>
+    <constant name="lang_hebrew">23</constant>
+    <constant name="lang_huebr">3</constant>
+    <constant name="lang_hungary">17</constant>
+    <constant name="lang_indonesian">15</constant>
+    <constant name="lang_italian">12</constant>
+    <constant name="lang_japanese">5</constant>
+    <constant name="lang_korean">10</constant>
+    <constant name="lang_norwegian">19</constant>
+    <constant name="lang_pirate">22</constant>
+    <constant name="lang_polish">16</constant>
+    <constant name="lang_ptbr">2</constant>
     <constant name="lang_ptpt">29</constant>
+    <constant name="lang_roumanian">21</constant>
+    <constant name="lang_russian">4</constant>
+    <constant name="lang_spanish">8</constant>
     <constant name="lang_suomi">30</constant>
+    <constant name="lang_swedish">24</constant>
+    <constant name="lang_thai">18</constant>
+    <constant name="lang_turkish">27</constant>
+    <constant name="lang_vietnam">26</constant>
+    <constant name="type_grenade">3</constant>
+    <constant name="type_heavy">2</constant>
+    <constant name="type_light">0</constant>
+    <constant name="type_medium">1</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
