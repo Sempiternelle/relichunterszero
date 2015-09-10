@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>-9999999</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>class_projectile</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -299,9 +299,6 @@ if (instance_exists(other)) &amp;&amp; (instance_exists(owner))
             <kind>1</kind>
             <string>///Main Draw
 
-if (image_angle &gt; 90) &amp;&amp; (image_angle &lt; 270) image_yscale = -1;
-else image_yscale = 1;
-
 //Pause Animation
 old_image_speed = image_speed;
 if (global.pause)
@@ -314,7 +311,10 @@ else
 }
 
 //Draw
-draw_sprite_ext(sprite_index,image_index,x,y,1,image_yscale,image_angle,c_white,myAlpha);
+image_angle = direction;
+
+if (myAlpha &lt; 0.4) myAlpha = 0.4;
+draw_sprite_ext(sprite_index,image_index,x,y,1,1,image_angle,c_white,myAlpha);
 </string>
           </argument>
         </arguments>
