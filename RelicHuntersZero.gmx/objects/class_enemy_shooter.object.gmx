@@ -47,11 +47,14 @@ dash_speed = 10;
 dodging = false;
 moving = false;
 
-//Freezing effect
-isFrozen = false;
-currentFreezingTime = 0
-freezingTime = 0;
-freezingCoeff = 1;
+//Timed Damage effect
+isAffected = false;
+cancelDammage = false; //TODO
+effectParam = 1;
+currentEffectTime = 0
+totalEffectTime = 0;
+effectHitsCounter = 0;
+effect = noone;
 
 //AI
 ai_active = false;
@@ -151,6 +154,9 @@ sprite_death = spr_turtle_idle;
 sprite_death2 = spr_turtle_idle;
 sprite_death3 = spr_turtle_idle;
 sprite_frozen = spr_turtle_frozen;
+sprite_poisoned_health = spr_turtle_frozen;
+sprite_poisoned_shield = spr_turtle_frozen;
+sprite_slow = spr_turtle_frozen;
 myDash = noone;
 myDash2 = noone;
 
@@ -281,7 +287,7 @@ if (hit_taken)
 else
 {
     if (moving) sprite_index = sprite_walk;
-    else if (isFrozen) sprite_index = sprite_frozen;
+    else if (isAffected) sprite_index = sprite_frozen; //TODO
     else sprite_index = sprite_idle;
     
     if (dodging)
@@ -479,7 +485,7 @@ if (hit_taken) want_to_activate = true;
 
 
 
-if (!ai_active) &amp;&amp; (!isFrozen)
+if (!ai_active) &amp;&amp; (!isAffected)
 {
     if (distance_to_player &lt; ai_activation_range) &amp;&amp; instance_exists(myClosestPlayer) &amp;&amp; (!want_to_activate)
     {
@@ -497,12 +503,14 @@ if (!ai_active) &amp;&amp; (!isFrozen)
     }
 }
 
-// Freezing Effect
-if (isFrozen) {         
-    currentFreezingTime ++;
-    if (currentFreezingTime == freezingTime) {
-        isFrozen = false;    
-        currentFreezingTime = 0;     
+// Frozen Effect
+if (isAffected) &amp;&amp; (effect == effect_frozen) {         
+    currentEffectTime ++;
+    if (currentEffectTime == totalEffectTime) {
+        isAffected = false;    
+        currentEffectTime = 0;    
+        effect = noone;         
+        effectHitsCounter = 0;
     }
 }
 

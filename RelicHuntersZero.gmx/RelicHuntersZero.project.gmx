@@ -1658,6 +1658,7 @@
       <object>objects\obj_rocket</object>
       <object>objects\obj_redbarrel_projectile</object>
       <object>objects\obj_projectile_player</object>
+      <object>objects\obj_freeze_projectile_player</object>
       <object>objects\obj_lazy_laser_projectile</object>
       <object>objects\obj_flame</object>
       <object>objects\obj_sonicboom</object>
@@ -1900,7 +1901,7 @@
     <room>rooms\room_end</room>
     <room>rooms\room_tutorial</room>
   </rooms>
-  <constants number="70">
+  <constants number="71">
     <constant name="an_clamp_forever">3</constant>
     <constant name="an_clamp">2</constant>
     <constant name="an_loop">1</constant>
@@ -1913,6 +1914,7 @@
     <constant name="char_raff">3</constant>
     <constant name="char_random">99</constant>
     <constant name="char_rider">7</constant>
+    <constant name="effect_frozen">0</constant>
     <constant name="f_all">2</constant>
     <constant name="f_enemy">1</constant>
     <constant name="f_player">0</constant>
