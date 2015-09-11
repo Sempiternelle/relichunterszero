@@ -51,6 +51,7 @@ isVulnerable = true;
 
 
 //Timed Effects
+isEffectVulnerable = true;
 isAffected = false;
 effectParam = 1;
 currentEffectTime = 0

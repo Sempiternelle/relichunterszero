@@ -58,7 +58,7 @@ event_inherited();
 if faction == f_player &amp;&amp; instance_exists(other)
 {
     //Freezing Effect
-    if (!other.isAffected) {
+    if (other.isEffectVulnerable) and (!other.isAffected) {
         other.effectHitsCounter++;
         if (other.effectHitsCounter == hitsRequired)
         {

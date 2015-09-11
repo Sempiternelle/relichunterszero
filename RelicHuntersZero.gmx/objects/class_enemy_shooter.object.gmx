@@ -277,7 +277,7 @@ if (hit_taken)
 else
 {
     if (moving) sprite_index = sprite_walk;
-    else if isAffected &amp;&amp; (effect == effect_frozen) sprite_index = sprite_frozen; //TODO
+    else if isAffected &amp;&amp; (effect == effect_frozen) sprite_index = sprite_frozen;
     else sprite_index = sprite_idle;
     
     if (dodging)

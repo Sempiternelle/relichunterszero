@@ -115,6 +115,7 @@ sprite_death2 = spr_kamikazelite_death2;
 sprite_precision1 = spr_kamikazelite_precision1;
 sprite_precision2 = spr_kamikazelite_precision2;
 sprite_dash_fx = spr_kamikaze_dash_fx;
+sprite_frozen = spr_kamikazelite_frozen;
 myDash = noone;
 myDash2 = noone;
 
@@ -207,6 +208,7 @@ if (hit_taken)
 else
 {
     if (moving) sprite_index = sprite_walk;
+    else if isAffected &amp;&amp; (effect == effect_frozen) sprite_index = sprite_frozen;
     else sprite_index = sprite_idle;
     
     if (dodging)

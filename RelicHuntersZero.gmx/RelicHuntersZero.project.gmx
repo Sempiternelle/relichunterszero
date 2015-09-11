@@ -332,6 +332,7 @@
       </sprites>
       <sprites name="Kamikaze">
         <sprite>sprites\spr_kamikaze_idle</sprite>
+        <sprite>sprites\spr_kamikaze_frozen</sprite>
         <sprite>sprites\spr_kamikaze_walk</sprite>
         <sprite>sprites\spr_kamikaze_precision</sprite>
         <sprite>sprites\spr_kamikaze_precision2</sprite>
@@ -347,6 +348,7 @@
         <sprite>sprites\spr_kamikazelite_flying</sprite>
         <sprite>sprites\spr_kamikazelite_hit</sprite>
         <sprite>sprites\spr_kamikazelite_idle</sprite>
+        <sprite>sprites\spr_kamikazelite_frozen</sprite>
         <sprite>sprites\spr_kamikazelite_precision1</sprite>
         <sprite>sprites\spr_kamikazelite_precision2</sprite>
         <sprite>sprites\spr_kamikazelite_walk</sprite>
