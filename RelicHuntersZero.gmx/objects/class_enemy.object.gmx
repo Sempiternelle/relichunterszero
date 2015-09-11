@@ -56,6 +56,7 @@ isAffected = false;
 effectParam = 1;
 currentEffectTime = 0
 totalEffectTime = 0;
+coeffEffectTime = 1;
 effectHitsCounter = 0;
 effect = noone;
 </string>

@@ -62,7 +62,7 @@ if faction == f_player &amp;&amp; instance_exists(other)
         other.effectHitsCounter++;
         if (other.effectHitsCounter == hitsRequired)
         {
-            other.totalEffectTime = effectTime;
+            other.totalEffectTime = effectTime * other.coeffEffectTime;
             other.isVulnerable = isVulnerable;  
             other.isAffected = true;   
             other.effect = effect_frozen;       
