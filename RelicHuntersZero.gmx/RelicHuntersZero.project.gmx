@@ -493,6 +493,7 @@
       <sprite>sprites\spr_keytar</sprite>
       <sprite>sprites\spr_machinegun</sprite>
       <sprite>sprites\spr_pistol</sprite>
+      <sprite>sprites\spr_freezing_pistol</sprite>
       <sprite>sprites\spr_pistol_assault</sprite>
       <sprite>sprites\spr_pistol_bouncer</sprite>
       <sprite>sprites\spr_pistol_heavy</sprite>
@@ -1249,6 +1250,7 @@
         <object>objects\obj_lazy_laser</object>
         <object>objects\obj_machinegun</object>
         <object>objects\obj_pistol</object>
+        <object>objects\obj_freezing_pistol</object>
         <object>objects\obj_pistol_assault</object>
         <object>objects\obj_pistol_bouncer</object>
         <object>objects\obj_pistol_heavy</object>
@@ -1641,6 +1643,7 @@
       <object>objects\obj_pickup_pistol_bouncer</object>
       <object>objects\obj_pickup_pistol_plasma</object>
       <object>objects\obj_pickup_pistol</object>
+      <object>objects\obj_pickup_freezing_pistol</object>
       <object>objects\obj_pickup_pistol_relic</object>
       <object>objects\obj_pickup_pistol_jimmy</object>
       <object>objects\obj_pickup_pistol_heavy</object>
