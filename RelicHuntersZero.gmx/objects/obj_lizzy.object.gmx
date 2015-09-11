@@ -33,12 +33,12 @@ event_inherited();
     
     melee_damage=50;
     
-    energy_max = 60;
+    energy_max = 80;
     energy_max_regular = energy_max;
     energy_max_relic = energy_max*2;
     energy = energy_max;
     
-    hp_max = 200;
+    hp_max = 120;
     hp_max_regular = hp_max;
     hp_max_relic = hp_max*2;
     
@@ -55,7 +55,7 @@ event_inherited();
     
     stamina_max = 100;
     stamina = stamina_max;
-    stamina_regen = 0.45;
+    stamina_regen = 0.4;
     energy_regen_speed = 2;
     
     

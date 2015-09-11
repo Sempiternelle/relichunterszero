@@ -155,11 +155,11 @@ if (owner) &amp;&amp; (instance_exists(owner))
         
         if owner.slotCharacter == char_lizzy
         {
-            statHealth = 5;
-            statShield = 3;
-            statMelee = 3;
-            statStamina = 1;
-            statSpeed = 2;
+            statHealth = 3;
+            statShield = 4;
+            statMelee = 1;
+            statStamina = 2;
+            statSpeed = 1;
             myWeaponSprite = spr_lazy_laser;
             myString = loc_key("CHARSELECT_DESC_LIZZY");
         }
