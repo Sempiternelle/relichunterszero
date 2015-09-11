@@ -518,7 +518,8 @@
     </sprites>
     <sprites name="Bullets&amp;Effects">
       <sprite>sprites\spr_bullet</sprite>
-      <sprite>sprites\spr_freeze_bullet</sprite>
+      <sprite>sprites\spr_lazy_laser_bullet</sprite>
+      <sprite>sprites\spr_freezing_bullet</sprite>
       <sprite>sprites\spr_bullet_blue</sprite>
       <sprite>sprites\spr_bullet_small</sprite>
       <sprite>sprites\spr_bullet_critical</sprite>

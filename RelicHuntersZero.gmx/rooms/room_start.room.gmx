@@ -427,8 +427,8 @@
     <instance objName="obj_limit" x="2048" y="1664" name="inst_EBC20841" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_swap_lizzy" x="704" y="1440" name="inst_FC80D896" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_altar_players" x="704" y="1440" name="inst_7B221C79" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_longbox" x="832" y="1504" name="inst_ADAAC872" locked="0" code="" scaleX="0.649999976158142" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_pickup_freezing_pistol" x="864" y="1440" name="inst_89BCB7CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_altar_relic" x="864" y="1440" name="inst_E61241F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_ship_stairs4" x="1344" y="1024" w="64" h="64" xo="0" yo="0" id="10013313" name="inst_D5A5AAB9" depth="9999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
