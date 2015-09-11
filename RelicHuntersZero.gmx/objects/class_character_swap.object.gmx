@@ -136,6 +136,13 @@ if instance_exists(activationClient) &amp;&amp; (active)
             global.character[p] = char_rider;
             newChar = instance_create(activationClient.x,activationClient.y,obj_rider);
         }
+        else if (myCharacter == char_lizzy) 
+        {
+            myCharacter = global.character[p];
+            global.character[p] = char_lizzy;
+            newChar = instance_create(activationClient.x,activationClient.y,obj_lizzy);
+        }
+        
         
         newChar.myPlayerId = p;
         isClientLocked = false;
@@ -178,6 +185,8 @@ if (myCharacter == char_biu) &amp;&amp; (global.unlockBiu) unlock = true; //Unlo
 if (myCharacter == char_punny) &amp;&amp; (global.unlockPunny) unlock = true; //collect a lot of bounty
 
 if (myCharacter == char_ass) &amp;&amp; (global.unlockAss) unlock = true; //get killed at the boss 5 times (corpse)
+
+if (myCharacter == char_lizzy) unlock = true; //to test locked?
 </string>
           </argument>
         </arguments>
@@ -225,6 +234,7 @@ if (myCharacter == char_biu) sprite_index = spr_biu_holo;
 if (myCharacter == char_punny) sprite_index = spr_punny_holo;
 if (myCharacter == char_ass) sprite_index = spr_ass_holo;
 if (myCharacter == char_rider) sprite_index = spr_rider_idle;
+if (myCharacter == char_lizzy) sprite_index = spr_lizzy_holo;
 
 if (active) draw_self();
 
@@ -247,6 +257,7 @@ else
         if (myCharacter == char_punny) stringUnlockCharacter = loc_key("HUD_UNLOCK_REQ_PUNNY");
         if (myCharacter == char_jimmy) stringUnlockCharacter = 'I AM ERROR';
         if (myCharacter == char_rider) stringUnlockCharacter = 'I AM ERROR';
+        if (myCharacter == char_lizzy) stringUnlockCharacter = 'I AM ERROR';
         
         draw_text_ext(x, y-28, stringUnlockCharacter, 19, 150);
     }

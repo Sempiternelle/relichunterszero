@@ -47,6 +47,12 @@ dash_speed = 10;
 dodging = false;
 moving = false;
 
+//Freezing effect
+isFrozen = false;
+currentFreezingTime = 0
+freezingTime = 0;
+freezingCoeff = 1;
+
 //AI
 ai_active = false;
 want_to_activate = false;
@@ -144,6 +150,7 @@ sprite_dash = spr_turtle_idle;
 sprite_death = spr_turtle_idle;
 sprite_death2 = spr_turtle_idle;
 sprite_death3 = spr_turtle_idle;
+sprite_frozen = spr_turtle_frozen;
 myDash = noone;
 myDash2 = noone;
 
@@ -274,6 +281,7 @@ if (hit_taken)
 else
 {
     if (moving) sprite_index = sprite_walk;
+    else if (isFrozen) sprite_index = sprite_frozen;
     else sprite_index = sprite_idle;
     
     if (dodging)
@@ -468,7 +476,10 @@ if (grenade_count &gt; grenade_count_max) grenade_count = grenade_count_max;
 //Activate AI
 if (hit_taken) want_to_activate = true;
 
-if (!ai_active)
+
+
+
+if (!ai_active) &amp;&amp; (!isFrozen)
 {
     if (distance_to_player &lt; ai_activation_range) &amp;&amp; instance_exists(myClosestPlayer) &amp;&amp; (!want_to_activate)
     {
@@ -483,6 +494,15 @@ if (!ai_active)
         ai_active = true;
         activationFX = instance_create(x,y,fx_activation);
         activationFX.owner = id;
+    }
+}
+
+// Freezing Effect
+if (isFrozen) {         
+    currentFreezingTime ++;
+    if (currentFreezingTime == freezingTime) {
+        isFrozen = false;    
+        currentFreezingTime = 0;     
     }
 }
 
