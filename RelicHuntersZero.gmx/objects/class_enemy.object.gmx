@@ -48,6 +48,15 @@ push_direction = 0;
 push_speed = 0;
 
 isVulnerable = true;
+
+
+//Timed Effects
+isAffected = false;
+effectParam = 1;
+currentEffectTime = 0
+totalEffectTime = 0;
+effectHitsCounter = 0;
+effect = noone;
 </string>
           </argument>
         </arguments>

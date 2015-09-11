@@ -29,7 +29,7 @@
 event_inherited();
 effectTime = 3.5 * room_speed;
 hitsRequired = 1;
-cancelDamage = false;
+isVulnerable = true;
 </string>
           </argument>
         </arguments>
@@ -63,7 +63,7 @@ if faction == f_player &amp;&amp; instance_exists(other)
         if (other.effectHitsCounter == hitsRequired)
         {
             other.totalEffectTime = effectTime;
-            other.cancelDamage = cancelDamage;  
+            other.isVulnerable = isVulnerable;  
             other.isAffected = true;   
             other.effect = effect_frozen;       
             other.ai_active = false;

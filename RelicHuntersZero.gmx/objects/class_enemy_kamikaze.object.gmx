@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Main Shit
+event_inherited();
 shield = false;
 energy_max = 99999;
 energy = energy_max;
@@ -365,7 +366,7 @@ if (instance_exists(myClosestPlayer)) distance_to_player = point_distance(x,y,my
 //Activate AI
 if (hit_taken) want_to_activate = true;
 
-if (!ai_active)
+if (!ai_active) &amp;&amp; (effect = noone)
 {
     if (distance_to_player &lt; ai_activation_range) &amp;&amp; instance_exists(myClosestPlayer) &amp;&amp; (!want_to_activate)
     {
@@ -380,6 +381,17 @@ if (!ai_active)
         ai_active = true;
         activationFX = instance_create(x,y,fx_activation);
         activationFX.owner = id;
+    }
+}
+
+// Frozen Effect
+if (isAffected) &amp;&amp; (effect == effect_frozen) {         
+    currentEffectTime ++;
+    if (currentEffectTime == totalEffectTime) {
+        isAffected = false;    
+        currentEffectTime = 0;    
+        effect = noone;         
+        effectHitsCounter = 0;
     }
 }
 

@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Main Shit
+event_inherited();
 elite = false;
 shield = true;
 
@@ -47,14 +48,6 @@ dash_speed = 10;
 dodging = false;
 moving = false;
 
-//Timed Damage effect
-isAffected = false;
-cancelDammage = false; //TODO
-effectParam = 1;
-currentEffectTime = 0
-totalEffectTime = 0;
-effectHitsCounter = 0;
-effect = noone;
 
 //AI
 ai_active = false;
@@ -485,7 +478,7 @@ if (hit_taken) want_to_activate = true;
 
 
 
-if (!ai_active) &amp;&amp; (!isAffected)
+if (!ai_active) &amp;&amp; (effect == noone)
 {
     if (distance_to_player &lt; ai_activation_range) &amp;&amp; instance_exists(myClosestPlayer) &amp;&amp; (!want_to_activate)
     {
