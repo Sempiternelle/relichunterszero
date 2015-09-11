@@ -293,6 +293,7 @@
       </sprites>
       <sprites name="Duck">
         <sprite>sprites\spr_duck_idle</sprite>
+        <sprite>sprites\spr_duck_frozen</sprite>
         <sprite>sprites\spr_duck_walk</sprite>
         <sprite>sprites\spr_duck_dash</sprite>
         <sprite>sprites\spr_duck_hit</sprite>
@@ -303,6 +304,7 @@
       <sprites name="Duck2">
         <sprite>sprites\spr_duck2_walk</sprite>
         <sprite>sprites\spr_duck2_idle</sprite>
+        <sprite>sprites\spr_duck2_frozen</sprite>
         <sprite>sprites\spr_duck2_hit</sprite>
         <sprite>sprites\spr_duck2_death</sprite>
         <sprite>sprites\spr_duck2_death2</sprite>
@@ -311,6 +313,7 @@
       </sprites>
       <sprites name="Duck3">
         <sprite>sprites\spr_duck3_idle</sprite>
+        <sprite>sprites\spr_duck3_frozen</sprite>
         <sprite>sprites\spr_duck3_dash</sprite>
         <sprite>sprites\spr_duck3_hit</sprite>
         <sprite>sprites\spr_duck3_death</sprite>
@@ -363,6 +366,7 @@
       </sprites>
       <sprites name="Turtle2">
         <sprite>sprites\spr_turtle2_idle</sprite>
+        <sprite>sprites\spr_turtle2_frozen</sprite>
         <sprite>sprites\spr_turtle2_death1</sprite>
         <sprite>sprites\spr_turtle2_death2</sprite>
         <sprite>sprites\spr_turtle2_death3</sprite>
@@ -372,6 +376,7 @@
       </sprites>
       <sprites name="Turtle3">
         <sprite>sprites\spr_turtle3_idle</sprite>
+        <sprite>sprites\spr_turtle3_frozen</sprite>
         <sprite>sprites\spr_turtle3_walk</sprite>
         <sprite>sprites\spr_turtle3_hit</sprite>
         <sprite>sprites\spr_turtle3_death</sprite>

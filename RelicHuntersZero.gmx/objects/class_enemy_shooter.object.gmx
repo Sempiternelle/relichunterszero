@@ -147,9 +147,6 @@ sprite_death = spr_turtle_idle;
 sprite_death2 = spr_turtle_idle;
 sprite_death3 = spr_turtle_idle;
 sprite_frozen = spr_turtle_frozen;
-sprite_poisoned_health = spr_turtle_frozen;
-sprite_poisoned_shield = spr_turtle_frozen;
-sprite_slow = spr_turtle_frozen;
 myDash = noone;
 myDash2 = noone;
 
