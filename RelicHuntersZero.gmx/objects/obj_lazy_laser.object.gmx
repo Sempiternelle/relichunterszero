@@ -37,7 +37,7 @@ shake_amount = 20;
 
 projectile_speed = 45;
 projectile_speed_decay = 0;
-projectile_damage = 40;
+projectile_damage = 20;//40;
 projectile_range = 700;
 projectile_power = 3;
 projectile_recoil = 3;

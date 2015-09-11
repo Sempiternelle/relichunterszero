@@ -328,12 +328,26 @@ current_distance = 0;
 move_speed = speed_walk;
 firing = false;
 
+// Frozen Effect
+if (isAffected) &amp;&amp; (effect == effect_frozen) {    
+    //start freezing
+    if (currentEffectTime == 0) move_speed = 0;    
+    currentEffectTime ++;
+    if (currentEffectTime == totalEffectTime) {
+        isAffected = false;    
+        currentEffectTime = 0;    
+        effect = noone;         
+        effectHitsCounter = 0;
+        move_speed = speed_walk
+    }
+}
+
 var myClosestPlayer = instance_nearest(x,y,faction_player);
 
 distance_to_player = 0;
 if (instance_exists(myClosestPlayer)) distance_to_player = point_distance(x,y,myClosestPlayer.x,myClosestPlayer.y);
 
-if ( (distance_to_player &lt; ai_shutdown_range) || (on_screen(x,y)) ) &amp;&amp; (instance_exists(myClosestPlayer))
+if ( (distance_to_player &lt; ai_shutdown_range) || (on_screen(x,y)) ) &amp;&amp; (instance_exists(myClosestPlayer)) &amp;&amp; (effect != effect_frozen)
 {
     //Find my Target (Faction Check)
     fuckingEnemy = instance_nearest(x,y,faction_ducan);
